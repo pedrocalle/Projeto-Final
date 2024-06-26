@@ -63,6 +63,7 @@ public class Main {
         System.out.println("[2] - Ingresso");
         System.out.println("[3] - Participantes");
         System.out.println("[4] - Relatório");
+        System.out.println("[0] - Sair");
 
         int opt = scanner.nextInt();
         scanner.nextLine();
@@ -78,6 +79,8 @@ public class Main {
                 break;
             case 4:
                 relatorio();
+                break;
+            case 0:
                 break;
             default:
                 System.out.println("Opção inválida");
@@ -258,24 +261,28 @@ public class Main {
                 for (int i = 0; i < eventos.size(); i++) {
                     eventRecorder.gerarRelatorioEvento(eventos.get(i), i);
                 }
+                relatorio();
                 break;
 
             case 2:
                 for (int i = 0; i < ingressosVIP.size(); i++) {
                     eventRecorder.gerarRelatorioIngressoVip(ingressosVIP.get(i), i);
                 }
+                relatorio();
                 break;
 
             case 3:
                 for (int i = 0; i < ingressosRegular.size(); i++) {
                     eventRecorder.gerarRelatorioIngressoRegular(ingressosRegular.get(i), i);
                 }
+                relatorio();
                 break;
 
             case 4:
                 for (int i = 0; i < participantes.size(); i++) {
                     eventRecorder.gerarRelatorioParticipante(participantes.get(i), i);
                 }
+                relatorio();
                 break;
             case 5:
                 recursos();
