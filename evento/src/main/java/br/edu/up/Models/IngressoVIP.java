@@ -6,10 +6,6 @@ public class IngressoVIP extends Ingresso {
 
   public IngressoVIP(double preco, Evento evento, Participante participante) {
     super(preco, evento, participante);
-<<<<<<< HEAD
-=======
-    //incrementador de ID
->>>>>>> master
     this.id = ++contadorId;
   }
 
@@ -22,11 +18,6 @@ public class IngressoVIP extends Ingresso {
   }
 
   @Override
-<<<<<<< HEAD
-=======
-  // Método para calcular o aumento do preço (atualmente retorna 0.0)
-  // Ingresso relugar *2
->>>>>>> master
   public double calcularAumento() {
     double newPreco = getPreco() * 4;
     setPreco(newPreco);

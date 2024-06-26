@@ -8,21 +8,13 @@ public class Evento {
   LocalDate data;
   Organizador organizador;
   private static int contadorId = 0;
-<<<<<<< HEAD
 
   public Evento(String nome, LocalDate data, Organizador organizador) {
-=======
-  //Construtor que inicia os atributos anteriores
-
-  public Evento(String nome, LocalDate data, Organizador organizador) {
-    // Incrementador de ID, metodo estatico
->>>>>>> master
     this.id = ++contadorId;
     this.nome = nome;
     this.data = data;
     this.organizador = organizador;
   }
-
 
   public int getId() {
     return this.id;
@@ -55,7 +47,7 @@ public class Evento {
   public void setOrganizador(Organizador organizador) {
     this.organizador = organizador;
   }
-  
+
   public void exibirInfo() {
     System.out.println("id: " + id);
     System.out.println("nome: " + nome);
@@ -64,15 +56,14 @@ public class Evento {
     System.out.println("-----------------------");
   }
 
-
   @Override
   public String toString() {
     return "{" +
-      " id='" + getId() + "'" +
-      ", nome='" + getNome() + "'" +
-      ", data='" + getData() + "'" +
-      ", organizador='" + getOrganizador() + "'" +
-      "}";
+        " id='" + getId() + "'" +
+        ", nome='" + getNome() + "'" +
+        ", data='" + getData() + "'" +
+        ", organizador='" + getOrganizador() + "'" +
+        "}";
   }
 
 }

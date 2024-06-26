@@ -7,18 +7,11 @@ public class Organizador extends Pessoa {
     super.nome = nome;
     email = this.email;
   }
-<<<<<<< HEAD
 
   public void exibirInfo() {
     System.out.println(id);
     System.out.println(nome);
     System.out.println(email);
-=======
-  // Método para ixibir as informações do Organizador
-  public void exibirInfo() {
-    System.out.println(nome); // Cria um nome
-    System.out.println(email);// Cria um email
->>>>>>> master
   }
 
   public String getEmail() {
@@ -32,10 +25,7 @@ public class Organizador extends Pessoa {
   @Override
   public String toString() {
     return "{" +
-<<<<<<< HEAD
         " id='" + getId() + "'" +
-=======
->>>>>>> master
         ", nome='" + getNome() + "'" +
         ", email='" + getEmail() + "'" +
         "}";

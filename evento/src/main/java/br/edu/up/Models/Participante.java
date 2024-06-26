@@ -6,15 +6,8 @@ public class Participante extends Pessoa {
   private static int contadorId = 0;
 
   public Participante(String nome, String email, String telefone) {
-<<<<<<< HEAD
     super.id = ++contadorId;
     super.nome = nome;
-=======
-    // Atribui um ID único para o participante
-    super.id = ++contadorId;
-    super.nome = nome;
-    // Inicia o atributo nome da classe pai (Pessoa)
->>>>>>> master
     this.email = email;
     this.telefone = telefone;
   }
