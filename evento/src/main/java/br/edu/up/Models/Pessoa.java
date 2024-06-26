@@ -7,7 +7,7 @@ public abstract class Pessoa {
   public void exibirInfo() {
     System.out.println(id);
     System.out.println(nome);
-  } 
+  }
 
   public int getId() {
     return this.id;
@@ -24,4 +24,13 @@ public abstract class Pessoa {
   public void setNome(String nome) {
     this.nome = nome;
   }
+
+  @Override
+  public String toString() {
+    return "{" +
+        " id='" + getId() + "'" +
+        ", nome='" + getNome() + "'" +
+        "}";
+  }
+
 }

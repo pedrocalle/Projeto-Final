@@ -7,12 +7,12 @@ public class IngressoVIP extends Ingresso {
   public IngressoVIP(double preco, Evento evento, Participante participante) {
     super(preco, evento, participante);
     this.id = ++contadorId;
-  } 
-  
+  }
+
   public int getId() {
     return this.id;
   }
-  
+
   public void setId(int id) {
     this.id = id;
   }
@@ -24,12 +24,13 @@ public class IngressoVIP extends Ingresso {
     return newPreco;
   }
 
-
   @Override
   public String toString() {
     return "{" +
-      " id='" + getId() + "'" +
-      "}";
+        " id='" + getId() + "'" +
+        ", preco='" + getPreco() + "'" +
+        ", evento='" + getEvento() + "'" +
+        ", participante='" + getParticipante() + "'" +
+        "}";
   }
-
 }

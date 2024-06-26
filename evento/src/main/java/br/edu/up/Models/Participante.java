@@ -17,7 +17,8 @@ public class Participante extends Pessoa {
     System.out.println("nome: " + nome);
     System.out.println("email: " + email);
     System.out.println("telefone: " + telefone);
-    System.out.println("-----------------------");;
+    System.out.println("-----------------------");
+    ;
   }
 
   public String getEmail() {
@@ -36,13 +37,14 @@ public class Participante extends Pessoa {
     this.telefone = telefone;
   }
 
-
   @Override
   public String toString() {
     return "{" +
-      " email='" + getEmail() + "'" +
-      ", telefone='" + getTelefone() + "'" +
-      "}";
+        " id='" + getId() + "'" +
+        ", nome='" + getNome() + "'" +
+        ", email='" + getEmail() + "'" +
+        ", telefone='" + getTelefone() + "'" +
+        "}";
   }
 
 }

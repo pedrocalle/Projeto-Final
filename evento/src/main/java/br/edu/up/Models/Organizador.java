@@ -25,10 +25,10 @@ public class Organizador extends Pessoa {
   @Override
   public String toString() {
     return "{" +
-      " email='" + getEmail() + "'" +
-      "}";
+        " id='" + getId() + "'" +
+        ", nome='" + getNome() + "'" +
+        ", email='" + getEmail() + "'" +
+        "}";
   }
-
-
 
 }
