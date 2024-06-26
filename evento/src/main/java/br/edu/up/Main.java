@@ -15,6 +15,10 @@ import br.edu.up.Models.Organizador;
 import br.edu.up.Models.Participante;
 
 public class Main {
+<<<<<<< HEAD
+=======
+    // Lista que armazenara os eventos, ingressos, particiantes, organizadot e event recorder
+>>>>>>> master
     static ArrayList<IngressoVIP> ingressosVIP = new ArrayList<>();
     static ArrayList<IngressoRegular> ingressosRegular = new ArrayList<>();
     static ArrayList<Evento> eventos = new ArrayList<>();
@@ -28,8 +32,13 @@ public class Main {
     static ParticipanteController participanteController = new ParticipanteController();
 
     public static void main(String[] args) {
+<<<<<<< HEAD
 
         System.out.println("===== Bem vindo ao EventManager =====");
+=======
+        System.out.println("===== Bem vindo ao EventManager =====");
+        //puxa o metódo que solicita ao usuário as informações
+>>>>>>> master
 
         cadastrarOrganizador(scanner, organizador);
         int opt = scanner.nextInt();
@@ -43,7 +52,11 @@ public class Main {
         recursos();
 
     }
+<<<<<<< HEAD
 
+=======
+    //Método de solicita ao usuário as informações de cadastro
+>>>>>>> master
     private static void cadastrarOrganizador(Scanner scanner, Organizador organizador) {
         System.out.println("Qual é o seu nome?");
         String nome = scanner.nextLine();
@@ -56,8 +69,14 @@ public class Main {
         System.out.println("[1] - Sim");
         System.out.println("[2] - Não");
     }
+<<<<<<< HEAD
 
     private static void recursos() {
+=======
+    // Menu com as opções principais do gerenciador
+    private static void recursos() {
+        System.out.println("===== MENU PRINCIPAL =====");
+>>>>>>> master
         System.out.println("Qual recurso deseja acessar?");
         System.out.println("[1] - Evento");
         System.out.println("[2] - Ingresso");
@@ -87,8 +106,14 @@ public class Main {
                 break;
         }
     }
+<<<<<<< HEAD
 
     private static void evento() {
+=======
+    //CRUD de evento
+    private static void evento() {
+        System.out.println("===== MENU EVENTO =====");
+>>>>>>> master
         System.out.println("[1] - Criar");
         System.out.println("[2] - Ler");
         System.out.println("[3] - Atualizar");
@@ -123,8 +148,14 @@ public class Main {
                 break;
         }
     }
+<<<<<<< HEAD
 
     private static void ingresso() {
+=======
+    // Método CRUD para ingresso
+    private static void ingresso() {
+        System.out.println("===== MENU INGRESSO =====");
+>>>>>>> master
         System.out.println("[1] - Criar");
         System.out.println("[2] - Ler");
         System.out.println("[3] - Atualizar");
@@ -211,8 +242,14 @@ public class Main {
             return 0;
         }
     }
+<<<<<<< HEAD
 
     private static void participante() {
+=======
+    // Metodo CRUD para participante
+    private static void participante() {
+        System.out.println("===== MENU PARTICIPANTES =====");
+>>>>>>> master
         System.out.println("[1] - Criar");
         System.out.println("[2] - Ler");
         System.out.println("[3] - Atualizar");
@@ -246,8 +283,14 @@ public class Main {
                 break;
         }
     }
+<<<<<<< HEAD
 
     private static void relatorio() {
+=======
+    // Metodo que possibilita a geração de relatorios em TXT
+    private static void relatorio() {
+        System.out.println("===== MENU RELATORIO =====");
+>>>>>>> master
         System.out.println("Qual relatório deseja gerar?");
         System.out.println("[1] - Evento");
         System.out.println("[2] - Ingresso VIP");

@@ -8,8 +8,15 @@ public class Evento {
   LocalDate data;
   Organizador organizador;
   private static int contadorId = 0;
+<<<<<<< HEAD
 
   public Evento(String nome, LocalDate data, Organizador organizador) {
+=======
+  //Construtor que inicia os atributos anteriores
+
+  public Evento(String nome, LocalDate data, Organizador organizador) {
+    // Incrementador de ID, metodo estatico
+>>>>>>> master
     this.id = ++contadorId;
     this.nome = nome;
     this.data = data;

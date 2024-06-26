@@ -11,7 +11,11 @@ public class IngressoRegularController {
   static Scanner scanner = new Scanner(System.in);
   static EventoController eventoController = new EventoController();
   static ParticipanteController participanteController = new ParticipanteController();
+<<<<<<< HEAD
 
+=======
+  // Criamos um ingresso reguar dentro de um objeto participante e evento
+>>>>>>> master
   public void criar(ArrayList<Evento> eventos, ArrayList<Participante> participantes,
       ArrayList<IngressoRegular> ingressosRegular) {
     boolean continuar = true;

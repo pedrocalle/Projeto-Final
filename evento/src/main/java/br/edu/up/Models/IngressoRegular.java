@@ -7,6 +7,11 @@ public class IngressoRegular extends Ingresso {
   public IngressoRegular(double preco, Evento evento, Participante participante) {
     super(preco, evento, participante);
     this.id = ++contadorId;
+<<<<<<< HEAD
+=======
+    //incrementador de ID
+
+>>>>>>> master
   }
 
   public int getId() {
@@ -18,6 +23,11 @@ public class IngressoRegular extends Ingresso {
   }
 
   @Override
+<<<<<<< HEAD
+=======
+  // Método para calcular o aumento do preço (atualmente retorna 0.0)
+  // Ingresso relugar *2
+>>>>>>> master
   public double calcularAumento() {
     double newPreco = getPreco() * 2;
     setPreco(newPreco);
