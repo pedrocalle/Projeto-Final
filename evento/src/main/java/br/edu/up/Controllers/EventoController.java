@@ -12,6 +12,7 @@ public class EventoController {
   static Scanner scanner = new Scanner(System.in);
 
   public void criar(Organizador organizador, ArrayList<Evento> eventos) {
+    // Cria um objeto com o padrão dd/MM/yyyy para formatar e analisar datas.
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     boolean continuar = true;
@@ -22,6 +23,12 @@ public class EventoController {
 
       System.out.println("Digite a data do evento (dd/mm/yyyy): ");
       String data = scanner.nextLine();
+
+      // Cria um novo objeto Evento com o nome fornecido, a data analisada usando o
+      // formatter,
+      // e o organizador. Aqui, LocalDate.parse(data, formatter) converte a string
+      // data em um
+      // objeto LocalDate usando o formato especificado.
 
       Evento novoEvento = new Evento(nome, LocalDate.parse(data, formatter), organizador);
       eventos.add(novoEvento);
@@ -36,6 +43,7 @@ public class EventoController {
     }
   }
 
+  // Método para exibir todos os eventos cadastrados
   public void ler(ArrayList<Evento> eventos) {
     if (eventos.size() == 0) {
       System.out.println("Lista vazia!");
@@ -46,6 +54,7 @@ public class EventoController {
     }
   }
 
+  // Metodo que modifica alguma informação
   public void atualizar(ArrayList<Evento> eventos) {
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     this.ler(eventos);
@@ -65,6 +74,7 @@ public class EventoController {
     }
   }
 
+  // Metodo que deleta algum evento
   public void deletar(ArrayList<Evento> eventos) {
     System.out.println("Digite o ID do evento que deseja deletar: ");
     int id = scanner.nextInt();

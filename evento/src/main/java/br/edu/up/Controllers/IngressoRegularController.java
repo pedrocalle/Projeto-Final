@@ -12,6 +12,7 @@ public class IngressoRegularController {
   static EventoController eventoController = new EventoController();
   static ParticipanteController participanteController = new ParticipanteController();
 
+  // Criamos um ingresso reguar dentro de um objeto participante e evento
   public void criar(ArrayList<Evento> eventos, ArrayList<Participante> participantes,
       ArrayList<IngressoRegular> ingressosRegular) {
     boolean continuar = true;

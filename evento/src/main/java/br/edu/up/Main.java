@@ -15,6 +15,8 @@ import br.edu.up.Models.Organizador;
 import br.edu.up.Models.Participante;
 
 public class Main {
+    // Lista que armazenara os eventos, ingressos, particiantes, organizadot e event
+    // recorder
     static ArrayList<IngressoVIP> ingressosVIP = new ArrayList<>();
     static ArrayList<IngressoRegular> ingressosRegular = new ArrayList<>();
     static ArrayList<Evento> eventos = new ArrayList<>();
@@ -28,8 +30,8 @@ public class Main {
     static ParticipanteController participanteController = new ParticipanteController();
 
     public static void main(String[] args) {
-
         System.out.println("===== Bem vindo ao EventManager =====");
+        // puxa o metódo que solicita ao usuário as informações
 
         cadastrarOrganizador(scanner, organizador);
         int opt = scanner.nextInt();
@@ -44,6 +46,7 @@ public class Main {
 
     }
 
+    // Método de solicita ao usuário as informações de cadastro
     private static void cadastrarOrganizador(Scanner scanner, Organizador organizador) {
         System.out.println("Qual é o seu nome?");
         String nome = scanner.nextLine();
@@ -57,7 +60,9 @@ public class Main {
         System.out.println("[2] - Não");
     }
 
+    // Menu com as opções principais do gerenciador
     private static void recursos() {
+        System.out.println("===== MENU PRINCIPAL =====");
         System.out.println("Qual recurso deseja acessar?");
         System.out.println("[1] - Evento");
         System.out.println("[2] - Ingresso");
@@ -88,7 +93,9 @@ public class Main {
         }
     }
 
+    // CRUD de evento
     private static void evento() {
+        System.out.println("===== MENU EVENTO =====");
         System.out.println("[1] - Criar");
         System.out.println("[2] - Ler");
         System.out.println("[3] - Atualizar");
@@ -124,7 +131,9 @@ public class Main {
         }
     }
 
+    // Método CRUD para ingresso
     private static void ingresso() {
+        System.out.println("===== MENU INGRESSO =====");
         System.out.println("[1] - Criar");
         System.out.println("[2] - Ler");
         System.out.println("[3] - Atualizar");
@@ -212,7 +221,9 @@ public class Main {
         }
     }
 
+    // Metodo CRUD para participante
     private static void participante() {
+        System.out.println("===== MENU PARTICIPANTES =====");
         System.out.println("[1] - Criar");
         System.out.println("[2] - Ler");
         System.out.println("[3] - Atualizar");
@@ -247,7 +258,9 @@ public class Main {
         }
     }
 
+    // Metodo que possibilita a geração de relatorios em TXT
     private static void relatorio() {
+        System.out.println("===== MENU RELATORIO =====");
         System.out.println("Qual relatório deseja gerar?");
         System.out.println("[1] - Evento");
         System.out.println("[2] - Ingresso VIP");

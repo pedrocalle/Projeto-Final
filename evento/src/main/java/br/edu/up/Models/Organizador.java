@@ -8,10 +8,10 @@ public class Organizador extends Pessoa {
     email = this.email;
   }
 
+  // Método para ixibir as informações do Organizador
   public void exibirInfo() {
-    System.out.println(id);
-    System.out.println(nome);
-    System.out.println(email);
+    System.out.println(nome); // Cria um nome
+    System.out.println(email);// Cria um email
   }
 
   public String getEmail() {
@@ -25,7 +25,6 @@ public class Organizador extends Pessoa {
   @Override
   public String toString() {
     return "{" +
-        " id='" + getId() + "'" +
         ", nome='" + getNome() + "'" +
         ", email='" + getEmail() + "'" +
         "}";

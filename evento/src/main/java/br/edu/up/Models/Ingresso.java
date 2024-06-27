@@ -45,15 +45,13 @@ public class Ingresso {
     return 0.0;
   }
 
-
-
   @Override
   public String toString() {
     return "{" +
-      ", preco='" + preco + "'" +
-      ", evento='" + evento + "'" +
-      ", participante='" + participante + "'" +
-      "}";
+        ", preco='" + preco + "'" +
+        ", evento='" + evento + "'" +
+        ", participante='" + participante + "'" +
+        "}";
   }
-  
+
 }
